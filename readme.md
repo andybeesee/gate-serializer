@@ -71,3 +71,8 @@ $permissions = $serializer->get($post, $user);
 //$permission = ['edit' => true, 'delete' => true]
 
 ```
+
+## TODO
+
+* Default permission customization
+* ...?
