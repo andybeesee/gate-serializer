@@ -1,14 +1,6 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: andrewhollandmoritz
- * Date: 5/17/16
- * Time: 5:07 AM
- */
+<?php namespace AndyBeesee\Gate;
 
-namespace AndyBeesee\Gate;
-
-use AndyBeesee\Serializer as PermissionsSerializer;
+use AndyBeesee\Gate\Serializer as PermissionsSerializer;
 
 trait HasPermissionsTrait
 {

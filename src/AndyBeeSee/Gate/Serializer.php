@@ -12,9 +12,10 @@ class Serializer {
             throw new \Exception("You must pass an object to PermissionsSerializer");
         }
 
+        $this->baseObject = $baseObject;
+
         //Default permissions are always false
         $default = $this->getDefaultPermissions();
-
         if(is_null($user) && !Auth::check()){
             return $default;
         } else if(is_null($user)){
@@ -23,6 +24,7 @@ class Serializer {
         }
 
         $final = [];
+
         foreach($default as $action => $value){
             //Get results of permission check
             $final[$action] = Gate::forUser($user)->allows($action, $this->baseObject);
