@@ -1,6 +1,6 @@
 # Use AndyBeesee\Gate\Serializer
 
-For serializing user permissions on objects to pass to clients.
+For serializing user permissions on objects to pass to clients. See [example project](https://github.com/andybeesee/gate-serializer-example)
 
 ## Requires Laravel authorization package, and use of [policies](https://laravel.com/docs/5.2/authorization#policies)
 
@@ -46,7 +46,7 @@ use AndyBeesee\Gate\HasPermissionsAttribute;
 
 class Something extends Model {
   use HasPermissionsAttribute;
-  
+
   // Make sure to append permissions to the output
   public $appends = ['permissions'];
 }
