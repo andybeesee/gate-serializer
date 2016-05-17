@@ -1,0 +1,15 @@
+{
+    "name": "andybeesee/permissions-serializer",
+    "description": "Returns a list of permissions available tot he given user about any object.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andy Hollandmoritz",
+            "email": "ahollandmoritz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "laravel/framework": "5.2.* | 5.3.*"
+    }
+}
