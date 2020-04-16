@@ -1,5 +1,6 @@
 <?php namespace AndyBeesee\Gate;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Auth;
 
@@ -44,7 +45,7 @@ class Serializer {
                 unset($methods[0]);
             }
 
-            return array_except($methods, 'before');
+            return Arr::except($methods, 'before');
         } catch (\InvalidArgumentException $e){
             return [];
         }
